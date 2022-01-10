@@ -5,10 +5,14 @@ function App() {
   return (
     <div className="App">
       <motion.form
-        initial={{ x: "50%", opacity: 0, scaleX: 0.5 }}
-        animate={{ x: 0, opacity: 1, scaleX: 1 }}
-        animate={{ translateX: 100, translateZ: 0 }}
-        transition={{ duration: 0.2, ease: "easeOut" }}
+        animate={{
+          opacity: 0,
+          translateX: 50,
+          translateX: 100,
+          translateZ: 0,
+          scaleX: 0.5,
+          translateZ: 0,
+        }}
       >
         <h1>Create An Account</h1>
         <label>
