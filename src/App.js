@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 function App() {
   return (
     <div className="App">
-      <motion.form initial={{ x: "-100vw" }} animate={{ x: 0 }}>
+      <motion.form
+        transformTemplate={({ x, rotate }) =>
+          `rotate(${rotate}deg) translateX(${x}px)`
+        }
+      >
         <h1>Create An Account</h1>
         <label>
           Email:
