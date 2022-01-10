@@ -8,9 +8,8 @@ function App() {
   return (
     <div className="App">
       <motion.form
-        transformTemplate={template}
-        animate={{ rotate: 360 }}
-        style={{ rotate: 0, x: "calc(50vh - 100px)" }}
+        animate={{ x: 100 }}
+        transition={{ type: "spring", stiffness: 100 }}
       >
         <h1>Create An Account</h1>
         <label>
